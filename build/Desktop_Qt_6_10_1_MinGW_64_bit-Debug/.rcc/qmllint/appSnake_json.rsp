@@ -1,0 +1,14 @@
+--bare
+-I
+C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug
+-I
+C:/Qt/6.10.1/mingw_64/qml
+--resource
+C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qmake_SnakeGame.qrc
+--resource
+C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appSnake_raw_qml_0.qrc
+--resource
+C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appSnake_raw_qml_0_extra_qmldirs.qrc
+C:/C++/Snake_Game_Progra3/qml/Main.qml
+--json
+C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appSnake_qmllint.json

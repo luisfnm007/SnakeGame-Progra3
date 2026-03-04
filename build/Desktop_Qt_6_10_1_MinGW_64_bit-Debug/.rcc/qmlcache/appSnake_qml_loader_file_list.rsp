@@ -1,0 +1,7 @@
+--resource
+C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qmake_SnakeGame.qrc
+--resource
+C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appSnake_raw_qml_0.qrc
+--resource
+C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appSnake_raw_qml_0_extra_qmldirs.qrc
+/qt/qml/SnakeGame/qml/Main.qml

@@ -1,0 +1,23 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 157,
+                            "functionName": "centerIn",
+                            "line": 14,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "C:/C++/Snake_Game_Progra3/qml/Main.qml"
+                }
+            ],
+            "moduleId": "SnakeGame(appSnake)"
+        }
+    ]
+}

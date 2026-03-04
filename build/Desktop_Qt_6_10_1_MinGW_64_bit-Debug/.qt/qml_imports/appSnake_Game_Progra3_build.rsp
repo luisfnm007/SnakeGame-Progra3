@@ -4,11 +4,6 @@ C:/C++/Snake_Game_Progra3
 -output-file
 C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/qml_imports/appSnake_Game_Progra3_build.cmake
 -importPath
-C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/Snake_Game_Progra3
--importPath
 C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug
 -importPath
 C:/Qt/6.10.1/mingw_64/qml
--qrcFiles
-C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qmake_Snake_Game_Progra3.qrc
-C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appSnake_Game_Progra3_raw_qml_0.qrc

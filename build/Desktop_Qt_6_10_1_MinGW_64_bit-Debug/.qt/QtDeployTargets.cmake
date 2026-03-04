@@ -1,3 +1,3 @@
-set(__QT_DEPLOY_TARGET_appSnake_Game_Progra3_FILE C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appSnake_Game_Progra3.exe)
-set(__QT_DEPLOY_TARGET_appSnake_Game_Progra3_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_appSnake_Game_Progra3_RUNTIME_DLLS C:/Qt/6.10.1/mingw_64/bin/Qt6Quick.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6OpenGL.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6QmlMeta.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6QmlModels.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6QmlWorkerScript.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Qml.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Network.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Core.dll)
+set(__QT_DEPLOY_TARGET_appSnake_FILE C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appSnake.exe)
+set(__QT_DEPLOY_TARGET_appSnake_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_appSnake_RUNTIME_DLLS C:/Qt/6.10.1/mingw_64/bin/Qt6Quick.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6OpenGL.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6QmlMeta.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6QmlModels.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6QmlWorkerScript.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Qml.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Network.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Core.dll)

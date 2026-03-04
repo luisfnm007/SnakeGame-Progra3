@@ -1,0 +1,8 @@
+module SnakeGame
+linktarget appSnakeplugin
+optional plugin appSnakeplugin
+classname SnakeGamePlugin
+typeinfo appSnake.qmltypes
+prefer :/qt/qml/SnakeGame/
+Main 1.0 qml/Main.qml
+

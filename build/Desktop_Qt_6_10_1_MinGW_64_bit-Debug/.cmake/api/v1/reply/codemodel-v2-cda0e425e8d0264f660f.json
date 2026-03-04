@@ -1,0 +1,205 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f3ece0cec6ba52c1b14f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Snake_Game_Progra3",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-2ad801d4d69031efb44e.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-6fb5590ec5a8c39b0fab.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-0e1320aa79ce1efce7dd.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-5e802deb7e735e7c98ae.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-088e08d709e698b0c839.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake-Debug-73e882c78c35b6505e15.json",
+					"name" : "appSnake",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake_autogen-Debug-f98c2c0dd9a2d1dd8081.json",
+					"name" : "appSnake_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake_autogen_timestamp_deps-Debug-db8e62d4191d8087c5d3.json",
+					"name" : "appSnake_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake_copy_qml-Debug-222de871b43ccad513fc.json",
+					"name" : "appSnake_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake_copy_res-Debug-03df22dd27f8b3987e6b.json",
+					"name" : "appSnake_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake_qmlimportscan-Debug-bed8668ecb3502250e55.json",
+					"name" : "appSnake_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake_qmllint-Debug-1a84705e73ea9be376d2.json",
+					"name" : "appSnake_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake_qmllint_json-Debug-e16bb8a2c7ea7a5d5f29.json",
+					"name" : "appSnake_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake_qmllint_module-Debug-0e556002c82aab74351c.json",
+					"name" : "appSnake_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSnake_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSnake_qmltyperegistration-Debug-1bddd28d1912f54fac6a.json",
+					"name" : "appSnake_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-Debug-ca29768f0684f0332258.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appSnake_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appSnake_aotstats_target-Debug-96c32939148ad927850f.json",
+					"name" : "module_appSnake_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug",
+		"source" : "C:/C++/Snake_Game_Progra3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

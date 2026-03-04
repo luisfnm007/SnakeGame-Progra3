@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/SnakeGame/">
+    <file alias="qml/qmldir">C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/SnakeGame/qml/qmldir</file>
+  </qresource>
+</RCC>
+
