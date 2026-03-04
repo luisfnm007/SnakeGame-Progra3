@@ -1,0 +1,6 @@
+module Snake_Game_Progra3
+typeinfo appSnake_Game_Progra3.qmltypes
+prefer :/qt/qml/Snake_Game_Progra3/
+Main 254.0 Main.qml
+depends QtQuick
+

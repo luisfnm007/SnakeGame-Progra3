@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Snake_Game_Progra3/">
+    <file alias="Main.qml">C:/C++/Snake_Game_Progra3/Main.qml</file>
+  </qresource>
+</RCC>
+
