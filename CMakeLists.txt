@@ -17,6 +17,10 @@ qt_add_qml_module(appSnake
     VERSION 1.0
     QML_FILES
         qml/Main.qml
+        SOURCES src/Game.h
+        SOURCES src/Snake.h
+        SOURCES src/Snake.cpp
+        SOURCES
 )
 
 set_target_properties(appSnake PROPERTIES

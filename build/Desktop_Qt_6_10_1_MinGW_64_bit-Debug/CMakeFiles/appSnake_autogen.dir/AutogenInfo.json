@@ -869,7 +869,21 @@
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appSnake_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "appSnake_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"C:/C++/Snake_Game_Progra3/src/Game.h",
+			"MU",
+			"UVLADIE3JM/moc_Game.cpp",
+			null
+		],
+		[
+			"C:/C++/Snake_Game_Progra3/src/Snake.h",
+			"MU",
+			"UVLADIE3JM/moc_Snake.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appSnake_autogen/include",
 	"MOC_COMPILATION_FILE" : "C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appSnake_autogen/mocs_compilation.cpp",
@@ -958,6 +972,7 @@
 	"SETTINGS_FILE" : "C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/appSnake_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/C++/Snake_Game_Progra3/src/Snake.cpp", "MU", null ],
 		[ "C:/C++/Snake_Game_Progra3/src/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
