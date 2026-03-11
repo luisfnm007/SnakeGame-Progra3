@@ -1,7 +1,7 @@
 #include "src/Snake.h"
 
-Snake::Snake() : initialRow(6),
-    initialColumn(2),direction(Direction::RIGHT),
+Snake::Snake(int initRow, int initColumn) : initialRow(initRow),
+    initialColumn(initColumn), direction(Direction::RIGHT),
     nextDirection(Direction::RIGHT), growPending(false)
 {
 }

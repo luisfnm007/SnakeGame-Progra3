@@ -1,14 +1,7 @@
 #pragma once
 
 #include <vector>
-
-enum Direction
-{
-    UP,
-    DOWN,
-    LEFT,
-    RIGHT
-};
+#include "src/ENUMS.h"
 
 class Snake
 {
@@ -26,13 +19,12 @@ private:
 
 public:
 
-    Snake();
+    Snake(int initRow, int initColumn);
 
     int getHead() const;
     int nextHeadPos(int columns) const;
     int getSize() const;
 
-    void init(int columns);
     void moveHead(int newHead);
     void grow();
     void setDirection(Direction newDirection);

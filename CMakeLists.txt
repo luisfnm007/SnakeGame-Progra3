@@ -21,6 +21,12 @@ qt_add_qml_module(appSnake
         SOURCES src/Snake.h
         SOURCES src/Snake.cpp
         SOURCES
+        SOURCES src/Board.h
+        SOURCES src/Board.cpp
+        SOURCES src/Food.h
+        SOURCES src/Food.cpp
+        SOURCES src/Game.cpp
+        SOURCES src/Enums.h
 )
 
 set_target_properties(appSnake PROPERTIES
