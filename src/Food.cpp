@@ -38,7 +38,14 @@ int Food::randomPos(int boardSize, const Snake& snake) const
     return idx;
 }
 
+FoodType Food::getType() const
+{
+    return type;
+}
+
 int Food::getPosition() const
 {
     return position;
 }
+
+

@@ -30,7 +30,7 @@ public:
     void setDirection(Direction newDirection);
     void reset(int columns);
 
-    bool hasSelfCollision(int columns) const;
+    bool hasSelfCollision(int nextHead) const;
     bool contains(int idx) const;
     bool is180Turn(Direction newDirection) const;
 

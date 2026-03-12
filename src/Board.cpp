@@ -23,6 +23,17 @@ bool Board::inBoundsRowCol(int row, int col) const
     return true;
 }
 
+bool Board::isHorizontalJump(int currentIdx, int nextIdx) const
+{
+    int currentColumn = currentIdx % getColumns();
+    int nextColumn = nextIdx % getColumns();
+
+    bool rightJump = currentColumn == getColumns() - 1 && nextColumn == 0;
+    bool leftJump = currentColumn == 0 && nextColumn == getColumns() - 1;
+
+    return rightJump || leftJump;
+}
+
 int Board::getSize() const
 {
     return rows*columns;

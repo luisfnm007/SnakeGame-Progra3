@@ -63,10 +63,8 @@ void Snake::reset(int columns)
     growPending = false;
 }
 
-bool Snake::hasSelfCollision(int columns) const
+bool Snake::hasSelfCollision(int newHead) const
 {
-    int newHead = nextHeadPos(columns);
-
     if(growPending)
     {
         for(const int& pos : body)
