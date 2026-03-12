@@ -1,7 +1,8 @@
 #pragma once
 
-#include <vector>
 #include "src/ENUMS.h"
+#include <vector>
+#include <deque>
 
 class Snake
 {
@@ -13,7 +14,7 @@ private:
     int initialColumn;
 
     Direction direction;
-    Direction nextDirection;
+    std::deque<Direction> pendingDirections;
 
     bool growPending;
 

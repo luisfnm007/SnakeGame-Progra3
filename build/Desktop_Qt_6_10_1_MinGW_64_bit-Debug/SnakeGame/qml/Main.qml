@@ -49,13 +49,21 @@ Window {
                 return
 
             if (event.key === Qt.Key_Up)
+            {
                 mainWindow.backend.setDirection(0)
+            }
             else if (event.key === Qt.Key_Down)
+            {
                 mainWindow.backend.setDirection(1)
+            }
             else if (event.key === Qt.Key_Left)
+            {
                 mainWindow.backend.setDirection(2)
+            }
             else if (event.key === Qt.Key_Right)
+            {
                 mainWindow.backend.setDirection(3)
+            }
 
         }
     }

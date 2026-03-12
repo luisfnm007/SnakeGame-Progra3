@@ -1,8 +1,9 @@
 #include "src/Snake.h"
+#include <iostream>
 
-Snake::Snake(int initRow, int initColumn) : initialRow(initRow),
-    initialColumn(initColumn), direction(Direction::RIGHT),
-    nextDirection(Direction::RIGHT), growPending(false)
+Snake::Snake(int initRow, int initColumn) :
+    initialRow(initRow), initialColumn(initColumn),
+    direction(Direction::RIGHT), growPending(false)
 {
 }
 
@@ -13,7 +14,14 @@ int Snake::nextHeadPos(int columns) const
     int row = head/columns;
     int column = head%columns;
 
-    switch(nextDirection)
+    Direction nxtDir;
+
+    if(pendingDirections.empty())
+        nxtDir = direction;
+    else
+        nxtDir = pendingDirections.front();
+
+    switch(nxtDir)
     {
     case Direction::UP:
         row--;
@@ -38,7 +46,12 @@ int Snake::nextHeadPos(int columns) const
 void Snake::moveHead(int newHead)
 {
     body.push_back(newHead);
-    direction = nextDirection;
+
+    if(!pendingDirections.empty())
+    {
+        direction = pendingDirections.front();
+        pendingDirections.pop_front();
+    }
 
     if(!growPending)
     {
@@ -51,6 +64,7 @@ void Snake::moveHead(int newHead)
 void Snake::reset(int columns)
 {
     body.clear();
+    pendingDirections.clear();
 
     for(int column = initialColumn; column < initialColumn + 3; column++)
     {
@@ -59,7 +73,6 @@ void Snake::reset(int columns)
     }
 
     direction = Direction::RIGHT;
-    nextDirection = direction;
     growPending = false;
 }
 
@@ -109,33 +122,53 @@ void Snake::grow()
 
 void Snake::setDirection(Direction newDirection)
 {
+
+    if(pendingDirections.empty())
+    {
+        if(direction == newDirection)
+            return;
+    }
+    else
+    {
+        if(pendingDirections.back() == newDirection)
+            return;
+    }
+
+    if(pendingDirections.size() > 1)
+        return;
+
     if(is180Turn(newDirection))
         return;
 
-    nextDirection = newDirection;
+   pendingDirections.push_back(newDirection);
 }
 
 bool Snake::is180Turn(Direction newDirection) const
 {
+    Direction currentDir = direction;
+
+    if(!pendingDirections.empty())
+        currentDir = pendingDirections.back();
+
     switch(newDirection)
     {
     case Direction::LEFT:
-        if(direction == Direction::RIGHT)
+        if(currentDir == Direction::RIGHT)
             return true;
         break;
 
     case Direction::RIGHT:
-        if(direction == Direction::LEFT)
+        if(currentDir == Direction::LEFT)
             return true;
         break;
 
     case Direction::DOWN:
-        if(direction == Direction::UP)
+        if(currentDir == Direction::UP)
             return true;
         break;
 
     case Direction::UP:
-        if(direction == Direction::DOWN)
+        if(currentDir == Direction::DOWN)
             return true;
         break;
     }

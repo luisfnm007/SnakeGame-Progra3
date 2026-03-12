@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 249,
+                            "durationMicroseconds": 582,
                             "functionName": "backend",
                             "line": 17,
                             "message": "Cannot access value for name game"
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 17,
-                            "durationMicroseconds": 196,
+                            "durationMicroseconds": 137,
                             "functionName": "target",
                             "line": 22,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 9,
-                            "durationMicroseconds": 90,
+                            "durationMicroseconds": 59,
                             "functionName": "onBoardChanged",
                             "line": 25,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 49,
+                            "durationMicroseconds": 32,
                             "functionName": "fill",
                             "line": 33,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 175,
+                            "durationMicroseconds": 149,
                             "functionName": "onCompleted",
                             "line": 39,
                             "message": "method requestActivate cannot be resolved."
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 799,
+                            "durationMicroseconds": 1069,
                             "functionName": "onPressed",
                             "line": 47,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 24,
+                            "durationMicroseconds": 21,
                             "functionName": "onPressed",
                             "line": 47,
                             "message": ""
@@ -64,41 +64,41 @@
                         {
                             "codegenResult": 2,
                             "column": 15,
-                            "durationMicroseconds": 119,
+                            "durationMicroseconds": 111,
                             "functionName": "rows",
-                            "line": 67,
+                            "line": 75,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 2,
                             "column": 18,
-                            "durationMicroseconds": 98,
+                            "durationMicroseconds": 89,
                             "functionName": "columns",
-                            "line": 68,
+                            "line": 76,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 27,
+                            "durationMicroseconds": 23,
                             "functionName": "centerIn",
-                            "line": 65,
+                            "line": 73,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 20,
-                            "durationMicroseconds": 179,
+                            "durationMicroseconds": 167,
                             "functionName": "model",
-                            "line": 72,
+                            "line": 80,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
-                            "durationMicroseconds": 45,
+                            "durationMicroseconds": 38,
                             "functionName": "width",
-                            "line": 75,
+                            "line": 83,
                             "message": "Cannot access value for name mainWindow"
                         },
                         {
@@ -106,15 +106,15 @@
                             "column": 25,
                             "durationMicroseconds": 23,
                             "functionName": "height",
-                            "line": 76,
+                            "line": 84,
                             "message": "Cannot access value for name mainWindow"
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
-                            "durationMicroseconds": 76,
+                            "durationMicroseconds": 99,
                             "functionName": "color",
-                            "line": 78,
+                            "line": 86,
                             "message": "Cannot access value for name mainWindow"
                         }
                     ],

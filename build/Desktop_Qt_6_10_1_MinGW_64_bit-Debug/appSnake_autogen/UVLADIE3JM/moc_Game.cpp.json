@@ -13,20 +13,27 @@
                 },
                 {
                     "access": "public",
+                    "index": 4,
+                    "lineNumber": 39,
+                    "name": "tick",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
                     "arguments": [
                         {
                             "name": "direction",
                             "type": "Direction"
                         }
                     ],
-                    "index": 4,
+                    "index": 5,
                     "lineNumber": 41,
                     "name": "setDirection",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 5,
+                    "index": 6,
                     "isConst": true,
                     "lineNumber": 43,
                     "name": "getRows",
@@ -34,7 +41,7 @@
                 },
                 {
                     "access": "public",
-                    "index": 6,
+                    "index": 7,
                     "isConst": true,
                     "lineNumber": 44,
                     "name": "getColumns",
@@ -48,7 +55,7 @@
                             "type": "int"
                         }
                     ],
-                    "index": 7,
+                    "index": 8,
                     "isConst": true,
                     "lineNumber": 46,
                     "name": "getCellType",

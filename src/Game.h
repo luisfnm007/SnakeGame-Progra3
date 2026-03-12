@@ -36,7 +36,7 @@ public:
     Q_INVOKABLE void startGame();
     void resetGame();
 
-    void tick();
+    Q_INVOKABLE void tick();
 
     Q_INVOKABLE void setDirection(Direction direction);
 
