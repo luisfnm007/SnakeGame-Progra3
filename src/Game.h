@@ -32,6 +32,7 @@ public:
     //puntero al objeto padre, cuando un objeto tiene un padre en qt, el padre lo destruye
     //cuando el mismo se destruye, evitando errores de memoria
 
+    //Q_INVOKABLE indica que este metodo se llamara desde QML
     Q_INVOKABLE void startGame();
     void resetGame();
 

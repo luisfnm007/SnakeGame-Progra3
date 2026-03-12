@@ -8,66 +8,114 @@
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 161,
+                            "durationMicroseconds": 249,
                             "functionName": "backend",
-                            "line": 13,
+                            "line": 17,
                             "message": "Cannot access value for name game"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 17,
+                            "durationMicroseconds": 196,
+                            "functionName": "target",
+                            "line": 22,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 9,
+                            "durationMicroseconds": 90,
+                            "functionName": "onBoardChanged",
+                            "line": 25,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 49,
+                            "functionName": "fill",
+                            "line": 33,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 175,
+                            "functionName": "onCompleted",
+                            "line": 39,
+                            "message": "method requestActivate cannot be resolved."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 799,
+                            "functionName": "onPressed",
+                            "line": 47,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 25,
+                            "durationMicroseconds": 24,
+                            "functionName": "onPressed",
+                            "line": 47,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 15,
-                            "durationMicroseconds": 226,
+                            "durationMicroseconds": 119,
                             "functionName": "rows",
-                            "line": 18,
+                            "line": 67,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 2,
                             "column": 18,
-                            "durationMicroseconds": 130,
+                            "durationMicroseconds": 98,
                             "functionName": "columns",
-                            "line": 19,
+                            "line": 68,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 37,
+                            "durationMicroseconds": 27,
                             "functionName": "centerIn",
-                            "line": 17,
+                            "line": 65,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 20,
-                            "durationMicroseconds": 187,
+                            "durationMicroseconds": 179,
                             "functionName": "model",
-                            "line": 23,
+                            "line": 72,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
-                            "durationMicroseconds": 23,
+                            "durationMicroseconds": 45,
                             "functionName": "width",
-                            "line": 26,
-                            "message": "Cannot access value for name root"
+                            "line": 75,
+                            "message": "Cannot access value for name mainWindow"
                         },
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 11,
+                            "durationMicroseconds": 23,
                             "functionName": "height",
-                            "line": 27,
-                            "message": "Cannot access value for name root"
+                            "line": 76,
+                            "message": "Cannot access value for name mainWindow"
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
-                            "durationMicroseconds": 57,
+                            "durationMicroseconds": 76,
                             "functionName": "color",
-                            "line": 29,
-                            "message": "Cannot access value for name root"
+                            "line": 78,
+                            "message": "Cannot access value for name mainWindow"
                         }
                     ],
                     "filePath": "C:/C++/Snake_Game_Progra3/qml/Main.qml"

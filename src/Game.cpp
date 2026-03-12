@@ -1,7 +1,8 @@
 #include "src/Game.h"
+#include <iostream>
 
 Game::Game(QObject *parent): QObject(parent), board(20, 20),
-    snake(9, 2), food(189), gameOver(false), velocity(200), score(0)
+    snake(9, 2), food(189), gameOver(false), velocity(150), score(0)
 {
     //cuando el timer termine su tiempo, emite timeout y ejecuta tick
     connect(&timer, &QTimer::timeout, this, &Game::tick);
@@ -42,6 +43,7 @@ void Game::tick()
         gameOver = true;
         timer.stop();
         emit gameOverChanged();
+        std::cout <<"==========GAME OVER============" << std::endl;
         return;
     }
 
@@ -50,6 +52,7 @@ void Game::tick()
         score++;
         snake.grow();
         food.generate(board.getSize(), snake, Difficulty::EASY);
+        std::cout <<"==========COMIO============" << std::endl;
         emit scoreChanged();
     }
 

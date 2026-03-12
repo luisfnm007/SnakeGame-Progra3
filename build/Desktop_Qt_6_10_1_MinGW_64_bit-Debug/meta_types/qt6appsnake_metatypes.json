@@ -8,7 +8,7 @@
                     {
                         "access": "public",
                         "index": 3,
-                        "lineNumber": 35,
+                        "lineNumber": 36,
                         "name": "startGame",
                         "returnType": "void"
                     },
@@ -21,7 +21,7 @@
                             }
                         ],
                         "index": 4,
-                        "lineNumber": 40,
+                        "lineNumber": 41,
                         "name": "setDirection",
                         "returnType": "void"
                     },
@@ -29,7 +29,7 @@
                         "access": "public",
                         "index": 5,
                         "isConst": true,
-                        "lineNumber": 42,
+                        "lineNumber": 43,
                         "name": "getRows",
                         "returnType": "int"
                     },
@@ -37,7 +37,7 @@
                         "access": "public",
                         "index": 6,
                         "isConst": true,
-                        "lineNumber": 43,
+                        "lineNumber": 44,
                         "name": "getColumns",
                         "returnType": "int"
                     },
@@ -51,7 +51,7 @@
                         ],
                         "index": 7,
                         "isConst": true,
-                        "lineNumber": 45,
+                        "lineNumber": 46,
                         "name": "getCellType",
                         "returnType": "CellType"
                     }
@@ -62,21 +62,21 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 50,
+                        "lineNumber": 51,
                         "name": "boardChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 1,
-                        "lineNumber": 51,
+                        "lineNumber": 52,
                         "name": "gameOverChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 2,
-                        "lineNumber": 52,
+                        "lineNumber": 53,
                         "name": "scoreChanged",
                         "returnType": "void"
                     }
