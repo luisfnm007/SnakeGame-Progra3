@@ -112,7 +112,7 @@ bool Snake::contains(int idx) const
 
 void Snake::removeTail()
 {
-    body.erase(body.begin());
+    body.pop_front();
 }
 
 void Snake::grow()
@@ -185,7 +185,8 @@ int Snake::getSize() const
     return (int)body.size();
 }
 
-const std::vector<int>& Snake::getBody() const
+const std::deque<int>& Snake::getBody() const
 {
     return body;
 }
+

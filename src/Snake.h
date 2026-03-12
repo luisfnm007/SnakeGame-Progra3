@@ -1,14 +1,13 @@
 #pragma once
 
 #include "src/ENUMS.h"
-#include <vector>
 #include <deque>
 
 class Snake
 {
 private:
 
-    std::vector<int> body;
+    std::deque<int> body;
 
     int initialRow;
     int initialColumn;
@@ -35,7 +34,7 @@ public:
     bool contains(int idx) const;
     bool is180Turn(Direction newDirection) const;
 
-    const std::vector<int>& getBody() const;
+    const std::deque<int>& getBody() const;
 
 private:
     void removeTail();
