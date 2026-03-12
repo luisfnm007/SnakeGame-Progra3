@@ -1,11 +1,19 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include "src/Game.h"
+#include <ctime>
 
 int main(int argc, char *argv[])
 {
+    srand(time(0));
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+
+    Game game;
+    engine.rootContext()->setContextProperty("game", &game);
+
     QObject::connect(
         &engine,
         &QQmlApplicationEngine::objectCreationFailed,
@@ -14,6 +22,8 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
 
     engine.loadFromModule("SnakeGame", "Main");
+
+    game.startGame();
 
     return app.exec();
 }

@@ -32,17 +32,17 @@ public:
     //puntero al objeto padre, cuando un objeto tiene un padre en qt, el padre lo destruye
     //cuando el mismo se destruye, evitando errores de memoria
 
-    void startGame();
+    Q_INVOKABLE void startGame();
     void resetGame();
 
     void tick();
 
-    void setDirection(Direction direction);
+    Q_INVOKABLE void setDirection(Direction direction);
 
-    int getRows() const;
-    int getColumns() const;
+    Q_INVOKABLE int getRows() const;
+    Q_INVOKABLE int getColumns() const;
 
-    CellType getCellType(int idx) const;
+    Q_INVOKABLE CellType getCellType(int idx) const;
 
     //signals es una seccion especial, sirve para indicar cuales son los eventos/cambios
     //que la clase u objeto emite

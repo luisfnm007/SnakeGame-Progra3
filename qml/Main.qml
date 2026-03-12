@@ -1,17 +1,44 @@
 import QtQuick
+import QtQuick.Window
 
 Window {
-
-    width: 400
-    height: 400
+    id: root
+    width: 600
+    height: 600
     visible: true
     color: "black"
-    title: qsTr("Hello World")
+    title: "Snake"
 
-    Rectangle {
-        width: 50
-        height: 50
+    property int cellSize: 25
+    property var backend: game
+
+    Grid {
+        id: boardGrid
         anchors.centerIn: parent
-        color: "blue"
+        rows: root.backend ? root.backend.getRows() : 0
+        columns: root.backend ? root.backend.getColumns() : 0
+        spacing: 1
+
+        Repeater {
+            model: root.backend ? root.backend.getRows() * root.backend.getColumns() : 0
+
+            Rectangle {
+                width: root.cellSize
+                height: root.cellSize
+
+                color: {
+                    if (!root.backend)
+                        return "gray"
+
+                    let cell = root.backend.getCellType(index)
+
+                    if (cell === 1)
+                        return "lime"
+                    if (cell === 0)
+                        return "red"
+                    return "gray"
+                }
+            }
+        }
     }
 }

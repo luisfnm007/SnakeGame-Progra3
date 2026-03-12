@@ -1,10 +1,11 @@
 #include "src/Game.h"
 
 Game::Game(QObject *parent): QObject(parent), board(20, 20),
-    snake(5, 3), food(189), gameOver(false), velocity(200), score(0)
+    snake(9, 2), food(189), gameOver(false), velocity(200), score(0)
 {
     //cuando el timer termine su tiempo, emite timeout y ejecuta tick
     connect(&timer, &QTimer::timeout, this, &Game::tick);
+    resetGame();
 }
 
 void Game::resetGame()

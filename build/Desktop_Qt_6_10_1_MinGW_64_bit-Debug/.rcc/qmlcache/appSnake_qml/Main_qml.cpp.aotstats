@@ -6,12 +6,68 @@
                 {
                     "entries": [
                         {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 161,
+                            "functionName": "backend",
+                            "line": 13,
+                            "message": "Cannot access value for name game"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 15,
+                            "durationMicroseconds": 226,
+                            "functionName": "rows",
+                            "line": 18,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 18,
+                            "durationMicroseconds": 130,
+                            "functionName": "columns",
+                            "line": 19,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
+                        },
+                        {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 157,
+                            "durationMicroseconds": 37,
                             "functionName": "centerIn",
-                            "line": 14,
+                            "line": 17,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 187,
+                            "functionName": "model",
+                            "line": 23,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 23,
+                            "functionName": "width",
+                            "line": 26,
+                            "message": "Cannot access value for name root"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 11,
+                            "functionName": "height",
+                            "line": 27,
+                            "message": "Cannot access value for name root"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 57,
+                            "functionName": "color",
+                            "line": 29,
+                            "message": "Cannot access value for name root"
                         }
                     ],
                     "filePath": "C:/C++/Snake_Game_Progra3/qml/Main.qml"

@@ -4,7 +4,6 @@ enum class CellType
 {
     FOOD,
     SNAKE,
-    OBSTACLE,
     EMPTY
 };
 
