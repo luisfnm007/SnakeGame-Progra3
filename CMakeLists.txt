@@ -27,6 +27,8 @@ qt_add_qml_module(appSnake
         SOURCES src/Food.cpp
         SOURCES src/Game.cpp
         SOURCES src/Enums.h
+        QML_FILES qml/MenuButton.qml
+        QML_FILES
 )
 
 set_target_properties(appSnake PROPERTIES

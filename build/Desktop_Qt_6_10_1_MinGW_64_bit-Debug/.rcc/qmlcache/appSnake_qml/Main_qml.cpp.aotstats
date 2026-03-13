@@ -8,114 +8,178 @@
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 166,
+                            "durationMicroseconds": 233,
                             "functionName": "backend",
-                            "line": 17,
+                            "line": 22,
                             "message": "Cannot access value for name game"
                         },
                         {
                             "codegenResult": 0,
                             "column": 17,
-                            "durationMicroseconds": 132,
+                            "durationMicroseconds": 140,
                             "functionName": "target",
-                            "line": 22,
+                            "line": 27,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 9,
-                            "durationMicroseconds": 59,
+                            "durationMicroseconds": 82,
                             "functionName": "onBoardChanged",
-                            "line": 25,
+                            "line": 30,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 9,
+                            "durationMicroseconds": 138,
+                            "functionName": "onStartedChanged",
+                            "line": 35,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 31,
+                            "durationMicroseconds": 42,
                             "functionName": "fill",
-                            "line": 33,
+                            "line": 46,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 114,
+                            "durationMicroseconds": 111,
                             "functionName": "onCompleted",
-                            "line": 39,
+                            "line": 52,
                             "message": "method requestActivate cannot be resolved."
                         },
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 698,
+                            "durationMicroseconds": 661,
                             "functionName": "onPressed",
-                            "line": 47,
+                            "line": 60,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 18,
+                            "durationMicroseconds": 34,
                             "functionName": "onPressed",
-                            "line": 47,
+                            "line": 60,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 15,
-                            "durationMicroseconds": 117,
+                            "durationMicroseconds": 168,
                             "functionName": "rows",
-                            "line": 75,
+                            "line": 79,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 2,
                             "column": 18,
-                            "durationMicroseconds": 105,
+                            "durationMicroseconds": 193,
                             "functionName": "columns",
-                            "line": 76,
+                            "line": 80,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 27,
-                            "durationMicroseconds": 26,
-                            "functionName": "centerIn",
-                            "line": 73,
+                            "column": 23,
+                            "durationMicroseconds": 36,
+                            "functionName": "fill",
+                            "line": 77,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 20,
-                            "durationMicroseconds": 194,
+                            "durationMicroseconds": 235,
                             "functionName": "model",
-                            "line": 80,
+                            "line": 84,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
-                            "durationMicroseconds": 39,
+                            "durationMicroseconds": 54,
                             "functionName": "width",
-                            "line": 83,
+                            "line": 87,
                             "message": "Cannot access value for name mainWindow"
                         },
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 25,
+                            "durationMicroseconds": 33,
                             "functionName": "height",
-                            "line": 84,
+                            "line": 88,
                             "message": "Cannot access value for name mainWindow"
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
-                            "durationMicroseconds": 75,
+                            "durationMicroseconds": 135,
                             "functionName": "color",
-                            "line": 86,
+                            "line": 90,
                             "message": "Cannot access value for name mainWindow"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 18,
+                            "durationMicroseconds": 52,
+                            "functionName": "visible",
+                            "line": 122,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 28,
+                            "functionName": "fill",
+                            "line": 120,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 27,
+                            "functionName": "centerIn",
+                            "line": 126,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 27,
+                            "functionName": "width",
+                            "line": 133,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 65,
+                            "functionName": "onClick",
+                            "line": 139,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 52,
+                            "functionName": "onClick",
+                            "line": 144,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 60,
+                            "functionName": "onClick",
+                            "line": 149,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         }
                     ],
                     "filePath": "C:/C++/Snake_Game_Progra3/qml/Main.qml"

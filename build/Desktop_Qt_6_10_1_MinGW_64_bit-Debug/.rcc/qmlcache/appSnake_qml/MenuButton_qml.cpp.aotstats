@@ -1,0 +1,47 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 2,
+                            "column": 15,
+                            "durationMicroseconds": 74,
+                            "functionName": "text",
+                            "line": 19,
+                            "message": "Cannot access value for name textBtn"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 102,
+                            "functionName": "centerIn",
+                            "line": 18,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 114,
+                            "functionName": "onClicked",
+                            "line": 26,
+                            "message": "method click cannot be resolved."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 26,
+                            "functionName": "fill",
+                            "line": 25,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "C:/C++/Snake_Game_Progra3/qml/MenuButton.qml"
+                }
+            ],
+            "moduleId": "SnakeGame(appSnake)"
+        }
+    ]
+}

@@ -18,7 +18,10 @@ private:
     Snake snake;
     Food food;
 
+    Difficulty difficulty;
+
     bool gameOver;
+    bool started;
 
     int velocity;
     int score;
@@ -33,8 +36,9 @@ public:
     //cuando el mismo se destruye, evitando errores de memoria
 
     //Q_INVOKABLE indica que este metodo se llamara desde QML
-    Q_INVOKABLE void startGame();
+    Q_INVOKABLE void startGame(int difficulty);
     void resetGame();
+    void increaseVelocity();
 
     Q_INVOKABLE void tick();
 
@@ -45,9 +49,12 @@ public:
 
     Q_INVOKABLE CellType getCellType(int idx) const;
 
+    Q_INVOKABLE bool isStarted() const;
+
     //signals es una seccion especial, sirve para indicar cuales son los eventos/cambios
     //que la clase u objeto emite
 signals:
+    void startedChanged();
     void boardChanged();
     void gameOverChanged();
     void scoreChanged();

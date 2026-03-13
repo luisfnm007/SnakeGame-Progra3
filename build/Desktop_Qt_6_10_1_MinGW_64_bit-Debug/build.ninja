@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_6
 #############################################
 # Order-only phony target for appSnake
 
-build cmake_object_order_depends_target_appSnake: phony || .qt/rcc/qrc_appSnake_raw_qml_0.cpp .qt/rcc/qrc_appSnake_raw_qml_0_extra_qmldirs.cpp .qt/rcc/qrc_qmake_SnakeGame.cpp .rcc/qmlcache/appSnake_qml/Main_qml.cpp .rcc/qmlcache/appSnake_qml/Main_qml.cpp.aotstats .rcc/qmlcache/appSnake_qmlcache_loader.cpp SnakeGame/appSnake.qmltypes appSnake_autogen appSnake_autogen/mocs_compilation.cpp appSnake_autogen/timestamp appSnake_autogen_timestamp_deps appSnake_copy_qml appSnake_copy_res appSnake_qmlimportscan appsnake_qmltyperegistrations.cpp generate_qmlls_build_ini_file meta_types/appSnake_json_file_list.txt meta_types/appSnake_json_file_list.txt.timestamp meta_types/qt6appsnake_metatypes.json meta_types/qt6appsnake_metatypes.json.gen
+build cmake_object_order_depends_target_appSnake: phony || .qt/rcc/qrc_appSnake_raw_qml_0.cpp .qt/rcc/qrc_appSnake_raw_qml_0_extra_qmldirs.cpp .qt/rcc/qrc_qmake_SnakeGame.cpp .rcc/qmlcache/appSnake_qml/Main_qml.cpp .rcc/qmlcache/appSnake_qml/Main_qml.cpp.aotstats .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp.aotstats .rcc/qmlcache/appSnake_qmlcache_loader.cpp SnakeGame/appSnake.qmltypes appSnake_autogen appSnake_autogen/mocs_compilation.cpp appSnake_autogen/timestamp appSnake_autogen_timestamp_deps appSnake_copy_qml appSnake_copy_res appSnake_qmlimportscan appsnake_qmltyperegistrations.cpp generate_qmlls_build_ini_file meta_types/appSnake_json_file_list.txt meta_types/appSnake_json_file_list.txt.timestamp meta_types/qt6appsnake_metatypes.json meta_types/qt6appsnake_metatypes.json.gen
 
 build CMakeFiles/appSnake.dir/appSnake_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__appSnake_unscanned_Debug C$:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appSnake_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appSnake
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -129,6 +129,14 @@ build CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qm
   OBJECT_DIR = CMakeFiles\appSnake.dir
   OBJECT_FILE_DIR = CMakeFiles\appSnake.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.rcc\qmlcache\appSnake_qml
 
+build CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp.obj: CXX_COMPILER__appSnake_unscanned_Debug C$:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp || cmake_object_order_depends_target_appSnake
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\appSnake.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.rcc\qmlcache\appSnake_qml\MenuButton_qml.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appSnake_autogen/include -IC:/C++/Snake_Game_Progra3 -isystem C:/Qt/6.10.1/mingw_64/include/QtQml -isystem C:/Qt/6.10.1/mingw_64/include -isystem C:/Qt/6.10.1/mingw_64/include/QtCore -isystem C:/Qt/6.10.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.1/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.10.1/mingw_64/include/QtNetwork -isystem C:/Qt/6.10.1/mingw_64/include/QtQuick -isystem C:/Qt/6.10.1/mingw_64/include/QtGui -isystem C:/Qt/6.10.1/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\appSnake.dir
+  OBJECT_FILE_DIR = CMakeFiles\appSnake.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.rcc\qmlcache\appSnake_qml
+
 build CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appSnake_raw_qml_0.cpp.obj: CXX_COMPILER__appSnake_unscanned_Debug C$:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appSnake_raw_qml_0.cpp || cmake_object_order_depends_target_appSnake
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\appSnake.dir\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\rcc\qrc_appSnake_raw_qml_0.cpp.obj.d
@@ -153,7 +161,7 @@ build CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc
 #############################################
 # Link the executable appSnake.exe
 
-build appSnake.exe: CXX_EXECUTABLE_LINKER__appSnake_Debug CMakeFiles/appSnake.dir/appSnake_autogen/mocs_compilation.cpp.obj CMakeFiles/appSnake.dir/src/main.cpp.obj CMakeFiles/appSnake.dir/appsnake_qmltyperegistrations.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_SnakeGame.cpp.obj CMakeFiles/appSnake.dir/src/Snake.cpp.obj CMakeFiles/appSnake.dir/src/Board.cpp.obj CMakeFiles/appSnake.dir/src/Food.cpp.obj CMakeFiles/appSnake.dir/src/Game.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appSnake_qmlcache_loader.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appSnake_qml/Main_qml.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appSnake_raw_qml_0.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appSnake_raw_qml_0_extra_qmldirs.cpp.obj | C$:/Qt/6.10.1/mingw_64/lib/libQt6Quick.a C$:/Qt/6.10.1/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Qml.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Network.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.10.1/mingw_64/lib/libQt6EntryPoint.a || appSnake_autogen appSnake_autogen_timestamp_deps appSnake_copy_qml appSnake_copy_res appSnake_qmlimportscan generate_qmlls_build_ini_file
+build appSnake.exe: CXX_EXECUTABLE_LINKER__appSnake_Debug CMakeFiles/appSnake.dir/appSnake_autogen/mocs_compilation.cpp.obj CMakeFiles/appSnake.dir/src/main.cpp.obj CMakeFiles/appSnake.dir/appsnake_qmltyperegistrations.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_SnakeGame.cpp.obj CMakeFiles/appSnake.dir/src/Snake.cpp.obj CMakeFiles/appSnake.dir/src/Board.cpp.obj CMakeFiles/appSnake.dir/src/Food.cpp.obj CMakeFiles/appSnake.dir/src/Game.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appSnake_qmlcache_loader.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appSnake_qml/Main_qml.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appSnake_raw_qml_0.cpp.obj CMakeFiles/appSnake.dir/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appSnake_raw_qml_0_extra_qmldirs.cpp.obj | C$:/Qt/6.10.1/mingw_64/lib/libQt6Quick.a C$:/Qt/6.10.1/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Qml.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Network.a C$:/Qt/6.10.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.10.1/mingw_64/lib/libQt6EntryPoint.a || appSnake_autogen appSnake_autogen_timestamp_deps appSnake_copy_qml appSnake_copy_res appSnake_qmlimportscan generate_qmlls_build_ini_file
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.10.1/mingw_64/lib/libQt6Quick.a  C:/Qt/6.10.1/mingw_64/lib/libQt6OpenGL.a  C:/Qt/6.10.1/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -luser32  C:/Qt/6.10.1/mingw_64/lib/libQt6Qml.a  C:/Qt/6.10.1/mingw_64/lib/libQt6Network.a  C:/Qt/6.10.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.10.1/mingw_64/lib/libQt6EntryPoint.a  -lws2_32  -lshell32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -234,13 +242,13 @@ build generate_qmlls_build_ini_file: phony CMakeFiles/generate_qmlls_build_ini_f
 #############################################
 # Utility command for module_appSnake_aotstats_target
 
-build module_appSnake_aotstats_target: phony CMakeFiles/module_appSnake_aotstats_target .rcc/qmlcache/module_appSnake.aotstats .rcc/qmlcache/appSnake_qml/Main_qml.cpp .rcc/qmlcache/appSnake_qml/Main_qml.cpp.aotstats appsnake_qmltyperegistrations.cpp SnakeGame/appSnake.qmltypes appSnake_qmltyperegistration
+build module_appSnake_aotstats_target: phony CMakeFiles/module_appSnake_aotstats_target .rcc/qmlcache/module_appSnake.aotstats .rcc/qmlcache/appSnake_qml/Main_qml.cpp .rcc/qmlcache/appSnake_qml/Main_qml.cpp.aotstats .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp.aotstats appsnake_qmltyperegistrations.cpp SnakeGame/appSnake.qmltypes appSnake_qmltyperegistration
 
 
 #############################################
 # Utility command for all_aotstats
 
-build all_aotstats: phony CMakeFiles/all_aotstats .rcc/qmlcache/all_aotstats.aotstats .rcc/qmlcache/all_aotstats.txt .rcc/qmlcache/module_appSnake.aotstats .rcc/qmlcache/appSnake_qml/Main_qml.cpp .rcc/qmlcache/appSnake_qml/Main_qml.cpp.aotstats appsnake_qmltyperegistrations.cpp SnakeGame/appSnake.qmltypes module_appSnake_aotstats_target
+build all_aotstats: phony CMakeFiles/all_aotstats .rcc/qmlcache/all_aotstats.aotstats .rcc/qmlcache/all_aotstats.txt .rcc/qmlcache/module_appSnake.aotstats .rcc/qmlcache/appSnake_qml/Main_qml.cpp .rcc/qmlcache/appSnake_qml/Main_qml.cpp.aotstats .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp.aotstats appsnake_qmltyperegistrations.cpp SnakeGame/appSnake.qmltypes module_appSnake_aotstats_target
 
 
 #############################################
@@ -373,9 +381,18 @@ build .rcc/qmlcache/appSnake_qml/Main_qml.cpp .rcc/qmlcache/appSnake_qml/Main_qm
 
 
 #############################################
+# Custom command for .rcc\qmlcache\appSnake_qml\MenuButton_qml.cpp
+
+build .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp ${cmake_ninja_workdir}.rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp.aotstats: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/bin/qmlcachegen.exe C$:/C++/Snake_Game_Progra3/qml/MenuButton.qml .qt/rcc/qmake_SnakeGame.qrc .qt/rcc/appSnake_raw_qml_0.qrc .qt/rcc/appSnake_raw_qml_0_extra_qmldirs.qrc SnakeGame/appSnake.qmltypes SnakeGame/qmldir
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appSnake_qml && C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.10.1/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/SnakeGame/qml/MenuButton.qml -I C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug -I C:/Qt/6.10.1/mingw_64/qml -i C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/SnakeGame/qmldir --resource C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qmake_SnakeGame.qrc --resource C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appSnake_raw_qml_0.qrc --resource C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appSnake_raw_qml_0_extra_qmldirs.qrc --dump-aot-stats --module-id=SnakeGame(appSnake) -o C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp C:/C++/Snake_Game_Progra3/qml/MenuButton.qml"
+  DESC = Generating .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp, .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp.aotstats
+  restat = 1
+
+
+#############################################
 # Custom command for .qt\rcc\qrc_appSnake_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appSnake_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appSnake_raw_qml_0.cpp: CUSTOM_COMMAND C$:/C++/Snake_Game_Progra3/qml/Main.qml .qt/rcc/appSnake_raw_qml_0.qrc C$:/Qt/6.10.1/mingw_64/bin/rcc.exe || appSnake_autogen appSnake_autogen_timestamp_deps appSnake_copy_qml appSnake_copy_res appSnake_qmlimportscan generate_qmlls_build_ini_file
+build .qt/rcc/qrc_appSnake_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appSnake_raw_qml_0.cpp: CUSTOM_COMMAND C$:/C++/Snake_Game_Progra3/qml/Main.qml C$:/C++/Snake_Game_Progra3/qml/MenuButton.qml .qt/rcc/appSnake_raw_qml_0.qrc C$:/Qt/6.10.1/mingw_64/bin/rcc.exe || appSnake_autogen appSnake_autogen_timestamp_deps appSnake_copy_qml appSnake_copy_res appSnake_qmlimportscan generate_qmlls_build_ini_file
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug && C:\Qt\6.10.1\mingw_64\bin\rcc.exe --output C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/qrc_appSnake_raw_qml_0.cpp --name appSnake_raw_qml_0 C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appSnake_raw_qml_0.qrc --no-zstd"
   DESC = Running rcc for resource appSnake_raw_qml_0
   restat = 1
@@ -419,21 +436,21 @@ build CMakeFiles/appSnake_qmltyperegistration | ${cmake_ninja_workdir}CMakeFiles
 #############################################
 # Custom command for CMakeFiles\appSnake_qmllint
 
-build CMakeFiles/appSnake_qmllint | ${cmake_ninja_workdir}CMakeFiles/appSnake_qmllint: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/bin/qmllint.exe C$:/C++/Snake_Game_Progra3/qml/Main.qml .rcc/qmllint/appSnake.rsp || all_qmltyperegistrations appSnake_qmltyperegistration
+build CMakeFiles/appSnake_qmllint | ${cmake_ninja_workdir}CMakeFiles/appSnake_qmllint: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/bin/qmllint.exe C$:/C++/Snake_Game_Progra3/qml/Main.qml C$:/C++/Snake_Game_Progra3/qml/MenuButton.qml .rcc/qmllint/appSnake.rsp || all_qmltyperegistrations appSnake_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\C++\Snake_Game_Progra3 && C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.10.1/mingw_64/bin/qmllint.exe @C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmllint/appSnake.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appSnake_qmllint_json
 
-build CMakeFiles/appSnake_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appSnake_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/bin/qmllint.exe C$:/C++/Snake_Game_Progra3/qml/Main.qml .rcc/qmllint/appSnake_json.rsp || all_qmltyperegistrations appSnake_qmltyperegistration
+build CMakeFiles/appSnake_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appSnake_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/bin/qmllint.exe C$:/C++/Snake_Game_Progra3/qml/Main.qml C$:/C++/Snake_Game_Progra3/qml/MenuButton.qml .rcc/qmllint/appSnake_json.rsp || all_qmltyperegistrations appSnake_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\C++\Snake_Game_Progra3 && C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.10.1/mingw_64/bin/qmllint.exe @C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmllint/appSnake_json.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appSnake_qmllint_module
 
-build CMakeFiles/appSnake_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appSnake_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/bin/qmllint.exe C$:/C++/Snake_Game_Progra3/qml/Main.qml .rcc/qmllint/appSnake_module.rsp || all_qmltyperegistrations appSnake_qmltyperegistration
+build CMakeFiles/appSnake_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appSnake_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/bin/qmllint.exe C$:/C++/Snake_Game_Progra3/qml/Main.qml C$:/C++/Snake_Game_Progra3/qml/MenuButton.qml .rcc/qmllint/appSnake_module.rsp || all_qmltyperegistrations appSnake_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\C++\Snake_Game_Progra3 && C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.10.1/mingw_64/bin/qmllint.exe @C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmllint/appSnake_module.rsp"
 
 
@@ -446,7 +463,7 @@ build CMakeFiles/appSnake_copy_qml | ${cmake_ninja_workdir}CMakeFiles/appSnake_c
 #############################################
 # Custom command for .qt\appSnake_qml.txt
 
-build .qt/appSnake_qml.txt | ${cmake_ninja_workdir}.qt/appSnake_qml.txt: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake C$:/C++/Snake_Game_Progra3/qml/Main.qml
+build .qt/appSnake_qml.txt | ${cmake_ninja_workdir}.qt/appSnake_qml.txt: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake C$:/C++/Snake_Game_Progra3/qml/Main.qml C$:/C++/Snake_Game_Progra3/qml/MenuButton.qml
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -DFILES_INFO_PATH=C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/appSnake_qml.cmake -P C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake"
   DESC = Copying appSnake qml sources into build dir
   restat = 1
@@ -491,7 +508,7 @@ build CMakeFiles/module_appSnake_aotstats_target | ${cmake_ninja_workdir}CMakeFi
 #############################################
 # Custom command for .rcc\qmlcache\module_appSnake.aotstats
 
-build .rcc/qmlcache/module_appSnake.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_appSnake.aotstats: CUSTOM_COMMAND .rcc/qmlcache/appSnake_qml/Main_qml.cpp.aotstats .rcc/qmlcache/module_appSnake.aotstatslist || appSnake_qmltyperegistration
+build .rcc/qmlcache/module_appSnake.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_appSnake.aotstats: CUSTOM_COMMAND .rcc/qmlcache/appSnake_qml/Main_qml.cpp.aotstats .rcc/qmlcache/appSnake_qml/MenuButton_qml.cpp.aotstats .rcc/qmlcache/module_appSnake.aotstatslist || appSnake_qmltyperegistration
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug && C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.10.1/mingw_64/bin/qmlaotstats.exe aggregate C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/module_appSnake.aotstatslist C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.rcc/qmlcache/module_appSnake.aotstats"
   DESC = Generating .rcc/qmlcache/module_appSnake.aotstats
   restat = 1
@@ -522,7 +539,7 @@ build CMakeFiles/appSnake_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/appSn
 #############################################
 # Custom command for .qt\qml_imports\appSnake_build.cmake
 
-build .qt/qml_imports/appSnake_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appSnake_build.cmake: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_SnakeGame.qrc .qt/rcc/appSnake_raw_qml_0.qrc .qt/rcc/appSnake_raw_qml_0_extra_qmldirs.qrc C$:/C++/Snake_Game_Progra3/qml/Main.qml
+build .qt/qml_imports/appSnake_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appSnake_build.cmake: CUSTOM_COMMAND C$:/Qt/6.10.1/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_SnakeGame.qrc .qt/rcc/appSnake_raw_qml_0.qrc .qt/rcc/appSnake_raw_qml_0_extra_qmldirs.qrc C$:/C++/Snake_Game_Progra3/qml/Main.qml C$:/C++/Snake_Game_Progra3/qml/MenuButton.qml
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\C++\Snake_Game_Progra3 && C:\C++\Snake_Game_Progra3\build\Desktop_Qt_6_10_1_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.10.1/mingw_64/bin/qmlimportscanner.exe @C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/qml_imports/appSnake_build.rsp"
   DESC = Running qmlimportscanner for appSnake
   restat = 1

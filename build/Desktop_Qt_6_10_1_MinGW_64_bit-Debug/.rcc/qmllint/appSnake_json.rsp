@@ -10,5 +10,6 @@ C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/app
 --resource
 C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appSnake_raw_qml_0_extra_qmldirs.qrc
 C:/C++/Snake_Game_Progra3/qml/Main.qml
+C:/C++/Snake_Game_Progra3/qml/MenuButton.qml
 --json
 C:/C++/Snake_Game_Progra3/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/appSnake_qmllint.json

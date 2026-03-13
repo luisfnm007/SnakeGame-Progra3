@@ -2,5 +2,6 @@ module SnakeGame
 typeinfo appSnake.qmltypes
 prefer :/qt/qml/SnakeGame/
 Main 1.0 qml/Main.qml
+MenuButton 1.0 qml/MenuButton.qml
 depends QtQuick
 

@@ -1,8 +1,8 @@
 #include "src/Game.h"
 #include <iostream>
 
-Game::Game(QObject *parent): QObject(parent), board(20, 20),
-    snake(9, 2), food(189), gameOver(false), velocity(150), score(0)
+Game::Game(QObject *parent): QObject(parent), board(20, 20),  snake(9, 2), started(false),
+    food(189), gameOver(false), velocity(150), score(0), difficulty(Difficulty::EASY)
 {
     //cuando el timer termine su tiempo, emite timeout y ejecuta tick
     connect(&timer, &QTimer::timeout, this, &Game::tick);
@@ -12,7 +12,7 @@ Game::Game(QObject *parent): QObject(parent), board(20, 20),
 void Game::resetGame()
 {
     snake.reset(board.getColumns());
-    food.generate(board.getSize(), snake, Difficulty::EASY);
+    food.generate(board.getSize(), snake, difficulty);
 
     gameOver=false;
     score = 0;
@@ -23,10 +23,22 @@ void Game::resetGame()
     emit scoreChanged();
 }
 
-void Game::startGame()
+void Game::startGame(int difficulty)
 {
+    switch(difficulty)
+    {
+    case 1:  this->difficulty = Difficulty::EASY; break;
+    case 2:  this->difficulty = Difficulty::MEDIUM; break;
+    case 3:  this->difficulty = Difficulty::HARD; break;
+    default: this->difficulty = Difficulty::EASY; break;
+    }
+
+    velocity = 150;
+    started = true;
     resetGame();
     timer.start(velocity);
+
+    emit startedChanged();
 }
 
 void Game::tick()
@@ -41,9 +53,14 @@ void Game::tick()
         board.isHorizontalJump(snake.getHead(), newHead))
     {
         gameOver = true;
+        started = false;
+
         timer.stop();
-        emit gameOverChanged();
         std::cout <<"==========GAME OVER============" << std::endl;
+
+        emit gameOverChanged();
+        emit startedChanged();
+
         return;
     }
 
@@ -51,14 +68,29 @@ void Game::tick()
     {
         score++;
         snake.grow();
-        food.generate(board.getSize(), snake, Difficulty::EASY);
+        food.generate(board.getSize(), snake, difficulty);
+
+        increaseVelocity();
         std::cout <<"==========COMIO============" << std::endl;
+
         emit scoreChanged();
     }
 
     snake.moveHead(newHead);
 
     emit boardChanged();
+}
+
+void Game::increaseVelocity()
+{
+    if(difficulty != Difficulty::MEDIUM)
+        return;
+
+    if(velocity <= 40)
+        return;
+
+    velocity -=2;
+    timer.setInterval(velocity);
 }
 
 void Game::setDirection(Direction direction)
@@ -85,4 +117,9 @@ CellType Game::getCellType(int idx) const
         return CellType::FOOD;
 
     return CellType::EMPTY;
+}
+
+bool Game::isStarted() const
+{
+    return started;
 }

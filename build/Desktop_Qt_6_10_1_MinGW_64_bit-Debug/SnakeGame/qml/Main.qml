@@ -10,9 +10,14 @@ Window {
     title: "Snake"
 
     //tamanio de casiila
-    property int cellSize: 20
+    property int cellSize: 29
+
     //contador que nos servira para repintado
     property int boardVersionCounter: 0
+
+    //booleana para saber si estamos en el menu o no, y mostrar cada cosa, muy parecido a contador arriba
+    property bool inMenu: true
+
     //guardamos todo nuestra logica en backend (para despues utilizar los metodos implementados)
     property var backend: game
 
@@ -25,6 +30,14 @@ Window {
         function onBoardChanged() {
             //incremento boardVersionCounter para indicar actualizacion a QML
             mainWindow.boardVersionCounter++
+        }
+
+        function onStartedChanged()
+        {
+            if(mainWindow.backend.isStarted())
+                mainWindow.inMenu = false
+            else
+                mainWindow.inMenu = true
         }
     }
 
@@ -49,28 +62,19 @@ Window {
                 return
 
             if (event.key === Qt.Key_Up)
-            {
                 mainWindow.backend.setDirection(0)
-            }
             else if (event.key === Qt.Key_Down)
-            {
                 mainWindow.backend.setDirection(1)
-            }
             else if (event.key === Qt.Key_Left)
-            {
                 mainWindow.backend.setDirection(2)
-            }
             else if (event.key === Qt.Key_Right)
-            {
                 mainWindow.backend.setDirection(3)
-            }
-
         }
     }
 
     Grid {
         id: boardGrid
-        anchors.centerIn: parent
+        anchors.fill: parent
         //extraemos tamanio de grid desde backend(game)
         rows: mainWindow.backend ? mainWindow.backend.getRows() : 0
         columns: mainWindow.backend ? mainWindow.backend.getColumns() : 0
@@ -107,6 +111,44 @@ Window {
                     return "gray"
                 }
             }
+        }
+    }
+
+    Rectangle
+    {
+        id: menu
+        anchors.fill: parent
+        color: "black"
+        visible: mainWindow.inMenu
+
+        Column
+        {
+            anchors.centerIn: parent
+            spacing: 12
+            width: 220
+
+            Text {
+                text: qsTr("Selecciona un nivel")
+                color: "white"
+                width: parent.width
+            }
+
+            MenuButton
+            {
+                textBtn: "Facil"
+                onClick: mainWindow.backend.startGame(1)
+            }
+            MenuButton
+            {
+                textBtn: "Intermedio"
+                onClick: mainWindow.backend.startGame(2)
+            }
+            MenuButton
+            {
+                textBtn: "Dificil"
+                onClick: mainWindow.backend.startGame(3)
+            }
+
         }
     }
 }

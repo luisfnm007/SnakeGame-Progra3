@@ -39,11 +39,13 @@ template <> constexpr inline auto Game::qt_create_metaobjectdata<qt_meta_tag_ZN4
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "Game",
-        "boardChanged",
+        "startedChanged",
         "",
+        "boardChanged",
         "gameOverChanged",
         "scoreChanged",
         "startGame",
+        "difficulty",
         "tick",
         "setDirection",
         "Direction",
@@ -52,32 +54,39 @@ template <> constexpr inline auto Game::qt_create_metaobjectdata<qt_meta_tag_ZN4
         "getColumns",
         "getCellType",
         "CellType",
-        "idx"
+        "idx",
+        "isStarted"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Signal 'boardChanged'
+        // Signal 'startedChanged'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
-        // Signal 'gameOverChanged'
+        // Signal 'boardChanged'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
-        // Signal 'scoreChanged'
+        // Signal 'gameOverChanged'
         QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'scoreChanged'
+        QtMocHelpers::SignalData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'startGame'
-        QtMocHelpers::MethodData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void(int)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 7 },
+        }}),
         // Method 'tick'
-        QtMocHelpers::MethodData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(8, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'setDirection'
-        QtMocHelpers::MethodData<void(Direction)>(7, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 8, 9 },
+        QtMocHelpers::MethodData<void(Direction)>(9, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 10, 11 },
         }}),
         // Method 'getRows'
-        QtMocHelpers::MethodData<int() const>(10, 2, QMC::AccessPublic, QMetaType::Int),
+        QtMocHelpers::MethodData<int() const>(12, 2, QMC::AccessPublic, QMetaType::Int),
         // Method 'getColumns'
-        QtMocHelpers::MethodData<int() const>(11, 2, QMC::AccessPublic, QMetaType::Int),
+        QtMocHelpers::MethodData<int() const>(13, 2, QMC::AccessPublic, QMetaType::Int),
         // Method 'getCellType'
-        QtMocHelpers::MethodData<CellType(int) const>(12, 2, QMC::AccessPublic, 0x80000000 | 13, {{
-            { QMetaType::Int, 14 },
+        QtMocHelpers::MethodData<CellType(int) const>(14, 2, QMC::AccessPublic, 0x80000000 | 15, {{
+            { QMetaType::Int, 16 },
         }}),
+        // Method 'isStarted'
+        QtMocHelpers::MethodData<bool() const>(17, 2, QMC::AccessPublic, QMetaType::Bool),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -101,27 +110,32 @@ void Game::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
     auto *_t = static_cast<Game *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->boardChanged(); break;
-        case 1: _t->gameOverChanged(); break;
-        case 2: _t->scoreChanged(); break;
-        case 3: _t->startGame(); break;
-        case 4: _t->tick(); break;
-        case 5: _t->setDirection((*reinterpret_cast<std::add_pointer_t<Direction>>(_a[1]))); break;
-        case 6: { int _r = _t->getRows();
+        case 0: _t->startedChanged(); break;
+        case 1: _t->boardChanged(); break;
+        case 2: _t->gameOverChanged(); break;
+        case 3: _t->scoreChanged(); break;
+        case 4: _t->startGame((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 5: _t->tick(); break;
+        case 6: _t->setDirection((*reinterpret_cast<std::add_pointer_t<Direction>>(_a[1]))); break;
+        case 7: { int _r = _t->getRows();
             if (_a[0]) *reinterpret_cast<int*>(_a[0]) = std::move(_r); }  break;
-        case 7: { int _r = _t->getColumns();
+        case 8: { int _r = _t->getColumns();
             if (_a[0]) *reinterpret_cast<int*>(_a[0]) = std::move(_r); }  break;
-        case 8: { CellType _r = _t->getCellType((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 9: { CellType _r = _t->getCellType((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<CellType*>(_a[0]) = std::move(_r); }  break;
+        case 10: { bool _r = _t->isStarted();
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (Game::*)()>(_a, &Game::boardChanged, 0))
+        if (QtMocHelpers::indexOfMethod<void (Game::*)()>(_a, &Game::startedChanged, 0))
             return;
-        if (QtMocHelpers::indexOfMethod<void (Game::*)()>(_a, &Game::gameOverChanged, 1))
+        if (QtMocHelpers::indexOfMethod<void (Game::*)()>(_a, &Game::boardChanged, 1))
             return;
-        if (QtMocHelpers::indexOfMethod<void (Game::*)()>(_a, &Game::scoreChanged, 2))
+        if (QtMocHelpers::indexOfMethod<void (Game::*)()>(_a, &Game::gameOverChanged, 2))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (Game::*)()>(_a, &Game::scoreChanged, 3))
             return;
     }
 }
@@ -145,33 +159,39 @@ int Game::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 11;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 11)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 9;
+        _id -= 11;
     }
     return _id;
 }
 
 // SIGNAL 0
-void Game::boardChanged()
+void Game::startedChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 
 // SIGNAL 1
-void Game::gameOverChanged()
+void Game::boardChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 
 // SIGNAL 2
-void Game::scoreChanged()
+void Game::gameOverChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
+void Game::scoreChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
 }
 QT_WARNING_POP

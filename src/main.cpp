@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
     engine.loadFromModule("SnakeGame", "Main");
 
-    game.startGame();
+    //game.startGame(2);
 
     return app.exec();
 }
