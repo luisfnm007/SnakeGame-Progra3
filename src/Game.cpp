@@ -1,8 +1,8 @@
 #include "src/Game.h"
 #include <iostream>
 
-Game::Game(QObject *parent): QObject(parent), board(20, 20),  snake(9, 2), started(false),
-    food(189), gameOver(false), velocity(150), score(0), difficulty(Difficulty::EASY)
+Game::Game(QObject *parent): QObject(parent), board(20, 20),  snake(9, 2), started(false), ateFood(false),
+    ateSpecialFood(false),food(0), specialFood(-1), gameOver(false), velocity(150), score(0), difficulty(Difficulty::EASY)
 {
     //cuando el timer termine su tiempo, emite timeout y ejecuta tick
     connect(&timer, &QTimer::timeout, this, &Game::tick);
@@ -13,6 +13,11 @@ void Game::resetGame()
 {
     snake.reset(board.getColumns());
     food.generate(board.getSize(), snake, difficulty);
+
+    specialFood.setPosition(-1);
+
+    if(difficulty == Difficulty::HARD)
+        specialFood.generateSpecialFruit(board.getSize(), snake, difficulty);
 
     gameOver=false;
     score = 0;
@@ -48,48 +53,103 @@ void Game::tick()
 
     int newHead = snake.nextHeadPos(board.getColumns());
 
-    if(snake.hasSelfCollision(newHead) ||
-        !board.inBounds(newHead) ||
-        board.isHorizontalJump(snake.getHead(), newHead))
+    if(lost(newHead))
     {
-        gameOver = true;
-        started = false;
-
-        timer.stop();
-        std::cout <<"==========GAME OVER============" << std::endl;
-
-        emit gameOverChanged();
-        emit startedChanged();
-
+        stop();
         return;
     }
 
-    if(food.getPosition() == newHead)
-    {
-        score++;
-        snake.grow();
-        food.generate(board.getSize(), snake, difficulty);
+    handleFood(newHead);
 
-        increaseVelocity();
-        std::cout <<"==========COMIO============" << std::endl;
+    handleSpecialFood(newHead);
 
-        emit scoreChanged();
-    }
-
-    snake.moveHead(newHead);
+    finishTick(newHead);
 
     emit boardChanged();
 }
 
+void Game::finishTick(int newHead)
+{
+    snake.moveHead(newHead);
+
+    if(difficulty == Difficulty::HARD && ateSpecialFood)
+        specialFood.generateSpecialFruit(board.getSize(), snake, difficulty);
+
+    if(ateFood)
+        food.generate(board.getSize(), snake, difficulty);
+
+    ateFood = false;
+    ateSpecialFood = false;
+}
+
+void Game::handleFood(int newHead)
+{
+    if(food.getPosition() == newHead)
+    {
+        score++;
+        snake.grow();
+
+        if(difficulty ==  Difficulty::MEDIUM)
+            increaseVelocity();
+
+        std::cout <<"==========COMIO============" << std::endl;
+        std::cout <<"\n" << score << "\n";
+
+        ateFood = true;
+
+        emit scoreChanged();
+    }
+}
+
+void Game::handleSpecialFood(int newHead)
+{
+    if(specialFood.getPosition() == newHead)
+    {
+        switch(difficulty)
+        {
+        case Difficulty::EASY: return;
+        case Difficulty::MEDIUM: return;
+        case Difficulty::HARD:
+            if(specialFood.getType() == FoodType::INCREASEV)
+                velocity = 80;
+            else
+                velocity = 220;
+
+            ateSpecialFood = true;
+            timer.setInterval(velocity);
+        }
+    }
+}
+
+bool Game::lost(int newHead)
+{
+    if(snake.hasSelfCollision(newHead) ||
+        !board.inBounds(newHead) ||
+        board.isHorizontalJump(snake.getHead(), newHead))
+    {
+        return true;
+    }
+    return false;
+}
+
+void Game::stop()
+{
+    gameOver = true;
+    started = false;
+
+    timer.stop();
+    std::cout <<"==========GAME OVER============" << std::endl;
+
+    emit gameOverChanged();
+    emit startedChanged();
+}
+
 void Game::increaseVelocity()
 {
-    if(difficulty != Difficulty::MEDIUM)
-        return;
-
     if(velocity <= 40)
         return;
 
-    velocity -=2;
+    velocity -=3;
     timer.setInterval(velocity);
 }
 
@@ -115,6 +175,9 @@ CellType Game::getCellType(int idx) const
 
     if(food.getPosition() == idx)
         return CellType::FOOD;
+
+    if(specialFood.getPosition() == idx)
+        return CellType::SPECIAL_FOOD;
 
     return CellType::EMPTY;
 }

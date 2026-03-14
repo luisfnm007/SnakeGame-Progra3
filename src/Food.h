@@ -11,11 +11,15 @@ private:
 
 public:
     Food(int pos);
+    Food();
 
     void generate(int boardSize, const Snake& snake, Difficulty difficulty);
+    void generateSpecialFruit(int boardSize, const Snake& snake, Difficulty difficulty);
 
     int randomPos(int boardSize, const Snake& snake) const;
     int getPosition() const;
+
+    void setPosition(int pos);
 
     FoodType getType()const;
 };

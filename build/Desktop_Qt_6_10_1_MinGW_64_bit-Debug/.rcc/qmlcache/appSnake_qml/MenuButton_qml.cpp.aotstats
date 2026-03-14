@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 15,
-                            "durationMicroseconds": 74,
+                            "durationMicroseconds": 84,
                             "functionName": "text",
                             "line": 19,
                             "message": "Cannot access value for name textBtn"
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 102,
+                            "durationMicroseconds": 105,
                             "functionName": "centerIn",
                             "line": 18,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 2,
                             "column": 20,
-                            "durationMicroseconds": 114,
+                            "durationMicroseconds": 142,
                             "functionName": "onClicked",
                             "line": 26,
                             "message": "method click cannot be resolved."
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 26,
+                            "durationMicroseconds": 35,
                             "functionName": "fill",
                             "line": 25,
                             "message": ""

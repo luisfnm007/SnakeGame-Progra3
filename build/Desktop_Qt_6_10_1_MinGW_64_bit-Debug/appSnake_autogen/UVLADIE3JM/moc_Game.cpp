@@ -46,7 +46,6 @@ template <> constexpr inline auto Game::qt_create_metaobjectdata<qt_meta_tag_ZN4
         "scoreChanged",
         "startGame",
         "difficulty",
-        "tick",
         "setDirection",
         "Direction",
         "direction",
@@ -71,22 +70,20 @@ template <> constexpr inline auto Game::qt_create_metaobjectdata<qt_meta_tag_ZN4
         QtMocHelpers::MethodData<void(int)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 7 },
         }}),
-        // Method 'tick'
-        QtMocHelpers::MethodData<void()>(8, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'setDirection'
-        QtMocHelpers::MethodData<void(Direction)>(9, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 10, 11 },
+        QtMocHelpers::MethodData<void(Direction)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 9, 10 },
         }}),
         // Method 'getRows'
-        QtMocHelpers::MethodData<int() const>(12, 2, QMC::AccessPublic, QMetaType::Int),
+        QtMocHelpers::MethodData<int() const>(11, 2, QMC::AccessPublic, QMetaType::Int),
         // Method 'getColumns'
-        QtMocHelpers::MethodData<int() const>(13, 2, QMC::AccessPublic, QMetaType::Int),
+        QtMocHelpers::MethodData<int() const>(12, 2, QMC::AccessPublic, QMetaType::Int),
         // Method 'getCellType'
-        QtMocHelpers::MethodData<CellType(int) const>(14, 2, QMC::AccessPublic, 0x80000000 | 15, {{
-            { QMetaType::Int, 16 },
+        QtMocHelpers::MethodData<CellType(int) const>(13, 2, QMC::AccessPublic, 0x80000000 | 14, {{
+            { QMetaType::Int, 15 },
         }}),
         // Method 'isStarted'
-        QtMocHelpers::MethodData<bool() const>(17, 2, QMC::AccessPublic, QMetaType::Bool),
+        QtMocHelpers::MethodData<bool() const>(16, 2, QMC::AccessPublic, QMetaType::Bool),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -115,15 +112,14 @@ void Game::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         case 2: _t->gameOverChanged(); break;
         case 3: _t->scoreChanged(); break;
         case 4: _t->startGame((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 5: _t->tick(); break;
-        case 6: _t->setDirection((*reinterpret_cast<std::add_pointer_t<Direction>>(_a[1]))); break;
-        case 7: { int _r = _t->getRows();
+        case 5: _t->setDirection((*reinterpret_cast<std::add_pointer_t<Direction>>(_a[1]))); break;
+        case 6: { int _r = _t->getRows();
             if (_a[0]) *reinterpret_cast<int*>(_a[0]) = std::move(_r); }  break;
-        case 8: { int _r = _t->getColumns();
+        case 7: { int _r = _t->getColumns();
             if (_a[0]) *reinterpret_cast<int*>(_a[0]) = std::move(_r); }  break;
-        case 9: { CellType _r = _t->getCellType((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 8: { CellType _r = _t->getCellType((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<CellType*>(_a[0]) = std::move(_r); }  break;
-        case 10: { bool _r = _t->isStarted();
+        case 9: { bool _r = _t->isStarted();
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -159,14 +155,14 @@ int Game::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 10;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 10)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 11;
+        _id -= 10;
     }
     return _id;
 }

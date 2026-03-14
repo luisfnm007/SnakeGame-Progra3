@@ -14,15 +14,8 @@
                             }
                         ],
                         "index": 4,
-                        "lineNumber": 39,
-                        "name": "startGame",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 5,
                         "lineNumber": 43,
-                        "name": "tick",
+                        "name": "startGame",
                         "returnType": "void"
                     },
                     {
@@ -33,24 +26,24 @@
                                 "type": "Direction"
                             }
                         ],
-                        "index": 6,
-                        "lineNumber": 45,
+                        "index": 5,
+                        "lineNumber": 56,
                         "name": "setDirection",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 7,
+                        "index": 6,
                         "isConst": true,
-                        "lineNumber": 47,
+                        "lineNumber": 58,
                         "name": "getRows",
                         "returnType": "int"
                     },
                     {
                         "access": "public",
-                        "index": 8,
+                        "index": 7,
                         "isConst": true,
-                        "lineNumber": 48,
+                        "lineNumber": 59,
                         "name": "getColumns",
                         "returnType": "int"
                     },
@@ -62,17 +55,17 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 9,
+                        "index": 8,
                         "isConst": true,
-                        "lineNumber": 50,
+                        "lineNumber": 61,
                         "name": "getCellType",
                         "returnType": "CellType"
                     },
                     {
                         "access": "public",
-                        "index": 10,
+                        "index": 9,
                         "isConst": true,
-                        "lineNumber": 52,
+                        "lineNumber": 63,
                         "name": "isStarted",
                         "returnType": "bool"
                     }
@@ -83,28 +76,28 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 57,
+                        "lineNumber": 68,
                         "name": "startedChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 1,
-                        "lineNumber": 58,
+                        "lineNumber": 69,
                         "name": "boardChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 2,
-                        "lineNumber": 59,
+                        "lineNumber": 70,
                         "name": "gameOverChanged",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 3,
-                        "lineNumber": 60,
+                        "lineNumber": 71,
                         "name": "scoreChanged",
                         "returnType": "void"
                     }

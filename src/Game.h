@@ -17,11 +17,15 @@ private:
     Board board;
     Snake snake;
     Food food;
+    Food specialFood;
 
     Difficulty difficulty;
 
     bool gameOver;
     bool started;
+
+    bool ateFood;
+    bool ateSpecialFood;
 
     int velocity;
     int score;
@@ -40,7 +44,14 @@ public:
     void resetGame();
     void increaseVelocity();
 
-    Q_INVOKABLE void tick();
+    void tick();
+    void finishTick(int newHead);
+    void stop();
+
+    void handleFood(int newHead);
+    void handleSpecialFood(int newHead);
+
+    bool lost(int newHead);
 
     Q_INVOKABLE void setDirection(Direction direction);
 

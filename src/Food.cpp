@@ -9,21 +9,22 @@ void Food::generate(int boardSize, const Snake& snake, Difficulty difficulty)
 {
     int idx = randomPos(boardSize, snake);
 
-    switch(difficulty)
-    {
-    case Difficulty::HARD:
-        if(idx % 2 == 0)
-            type = FoodType::LOWERV;
-        else
-            type = FoodType::INCREASEV;
-
-        break;
-
-    default:
-        type = FoodType::NORMAL;
-    }
+    type = FoodType::NORMAL;
 
     position = idx;
+}
+
+void Food::generateSpecialFruit(int boardSize, const Snake &snake, Difficulty difficulty)
+{
+    int idx = randomPos(boardSize, snake);
+
+    if(type == FoodType::INCREASEV)
+        type = FoodType::LOWERV;
+    else
+        type = FoodType::INCREASEV;
+
+    position = idx;
+
 }
 
 int Food::randomPos(int boardSize, const Snake& snake) const
@@ -36,6 +37,11 @@ int Food::randomPos(int boardSize, const Snake& snake) const
     }
 
     return idx;
+}
+
+void Food::setPosition(int pos)
+{
+    this->position = pos;
 }
 
 FoodType Food::getType() const

@@ -108,6 +108,9 @@ Window {
                     //1 = snake
                     if (cellType === 1)
                         return "lime"
+
+                    if(cellType === 2)
+                        return "yellow"
                     return "gray"
                 }
             }
